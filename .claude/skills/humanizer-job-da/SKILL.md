@@ -9,7 +9,7 @@ Specialiseret humanizer til jobansøgninger. Bygger oven på humanizer-da men fa
 
 ## Benchmark
 
-**twoday/frontend-developer (2026-03-20)** er det bedste validerede eksempel på Babaks stemme. Brug den som kalibrering:
+**twoday/frontend-developer (2026-03-20)** er det bedste validerede eksempel på ansøgerens stemme. Brug den som kalibrering:
 - Åbner med konkret arbejde, ingen opvarmning
 - Meningen bag tests siges direkte: "I write tests. That is what makes the code work."
 - Gap håndteres ærligt + confident bridge + connector-sætning der lukker det
@@ -23,7 +23,7 @@ Specialiseret humanizer til jobansøgninger. Bygger oven på humanizer-da men fa
 2. Kør forbudte åbninger-tjek
 3. Kør kompetencepåstands-tjek
 4. Kør ansøgningsspecifikke mønster-tjek
-5. Kør "Ville Babak sige dette?"-testen
+5. Kør "Er dette din stemme?"-testen
 6. Kør åbnings-testen: match + bevis + værdi?
 7. Kør jeg/du-balancetjek
 8. Kør endelig AI-tjek
@@ -108,7 +108,7 @@ Erstat altid med konkrete eksempler - eller fjern helt:
 Teksten besvarer krav fra jobopslaget punkt for punkt i rækkefølge. Læses som en AI der har skannet opslaget. Omskriv til naturlig fortælling med konkrete eksempler.
 
 ### Motivationsafsnit uden substans
-"Stillingen tiltaler mig fordi I arbejder med [parafrase af opslaget]." Brug Babaks faktiske interview-svar om motivation i stedet.
+"Stillingen tiltaler mig fordi I arbejder med [parafrase af opslaget]." Brug ansøgerens faktiske interview-svar om motivation i stedet.
 
 ### Afslutningsklichéer
 - "Jeg håber, at min ansøgning har vakt jeres interesse" → fjern
@@ -121,26 +121,22 @@ Ensartet afsnitslængde er et AI-signal. Variér bevidst: korte sætninger efter
 
 ---
 
-## "Ville Babak sige dette?"-testen
+## "Er dette din stemme?"-testen
 
-Læs hvert afsnit højt. Spørg: "Ville Babak sige dette til én han mødte til kaffe?"
+Læs hvert afsnit højt. Spørg: "Ville du sige dette til én du mødte til kaffe?"
 
-**Tegn på at teksten ikke er hans:**
+**Tegn på at teksten ikke er ansøgerens:**
 - For velformuleret og glat
 - Ingen kant eller holdning
 - Alt er positivt ladet - ingen nuancer
 - Ingen ærlighed om gaps
 - Læses som en præsentation, ikke en person
 
-**Babaks stemme - kalibrer mod interview-svarene:**
-- Direkte og handlingsorienteret
-- Konkurrencementalitet: stopper ikke før opgaven er færdig
-- Automatiserer det der kan automatiseres - manuel arbejde er ikke interessant
-- Tænker forud for sin tid - ser hvad der skal ændres
-- Vedholdenhed som konkret kendetegn, ikke som buzzword
-- Ærlig om gaps - ikke undskyldende, men faktisk
+**Ansøgerens stemme - kalibrer mod interview-svarene:**
 
-Når interview-svar foreligger: brug Babaks egne formuleringer direkte i teksten hvor det falder naturligt.
+Lyt efter de egenskaber der træder frem i interview-svarene: direkte tone, konkrete anekdoter, holdninger til gaps, faglig stolthed. Brug disse som kalibrering — ikke generiske adjektiver.
+
+Når interview-svar foreligger: brug ansøgerens egne formuleringer direkte i teksten hvor det falder naturligt.
 
 ---
 
@@ -164,7 +160,7 @@ Men: Fjern ALDRIG "jeg" til det punkt hvor teksten lyder robotagtig. 45% af dans
 
 Stil disse to spørgsmål om åbningsafsnittet:
 
-1. **Bevis:** Starter åbningen med hvad Babak har gjort - konkret, med kontekst og resultat?
+1. **Bevis:** Starter åbningen med hvad ansøgeren har gjort - konkret, med kontekst og resultat?
 2. **Match:** Lander anden sætning matchet til det virksomheden søger?
 
 Begge skal være til stede inden første afsnit slutter. Hvis nej → omskriv åbningen.
@@ -176,7 +172,7 @@ Bevis i sætning ét. Match i sætning to. Ingen opvarmning.
 
 **Forbudte åbningsmønstre:**
 - Forklaring af hvad rollen kræver ("kræver andet end...") - fortæller dem om deres eget job
-- Babaks identitet eller erfaring som åbning ("Som erfaren konsulent med 25 års...")
+- Ansøgerens identitet eller erfaring som åbning ("Som erfaren konsulent med 25 års...")
 - To afsnit inden matchet er etableret
 
 ---
