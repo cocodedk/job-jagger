@@ -59,7 +59,7 @@ Only ask the role-specific questions in a single message:
 3. Er der noget i jobopslaget der bekymrer dig?
 
 **Kun hvis ikke dækket af gemte svar:**
-4. Beskriv en konkret situation eller et resultat der føles relevant for denne stilling. (Kun hvis rollen kræver et andet proof point end FITS/GC/Nuuday)
+4. Beskriv en konkret situation eller et resultat der føles relevant for denne stilling. (Kun hvis rollen kræver et andet proof point end dem der fremgår af dine gemte svar)
 5. Er der noget fra din erfaring du synes er undervurderet i dit CV — specifikt for denne rolle?
 
 Wait for answers before proceeding. Do not write the CV or ansøgning until you have the answers.
@@ -94,8 +94,8 @@ pdf_options:
 
 **CV structure (Danish norms):**
 - Name as H1 heading
-- Subtitle: role + "25 års erfaring"
-- Contact info: address, phone, email, LinkedIn (clickable link), GitHub (clickable link), Web: cocode.dk (clickable link)
+- Subtitle: role + years of experience (from cv-general.md)
+- Contact info: address, phone, email, LinkedIn (clickable link), GitHub (clickable link), personal website if listed in cv-general.md
 - Horizontal rule
 - **Profil** (5-7 lines): who the user is, what they bring, tailored to the role
 - **Kernekompetencer**: 5-8 bullet points, ordered by relevance to the specific role
@@ -155,7 +155,7 @@ Starts with the company's context (1 sentence), then immediately the user's conc
 **Model B — Company context first (Clinical Data Solutions model, works when the company situation is a strong hook):**
 > "Clinical Data Solutions builds document generation and analytical tools for researchers working with large-scale datasets. Python/FastAPI, MongoDB, TypeScript, React, full CI/CD and TDD — that is my daily stack. The engineering problem is the same: make complex data accessible and remove the manual work that slows down the people who depend on the platform."
 
-Their situation, then his stack, then common ground. Use when the company's problem/domain provides a compelling hook.
+Their situation, then the user's stack, then common ground. Use when the company's problem/domain provides a compelling hook.
 
 **How to choose:**
 - If the role is primarily software/engineering: use Model A — start with the user's concrete work
