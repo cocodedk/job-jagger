@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  color: #1a1a1a;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #111;
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 12pt;
+  font-weight: 600;
+  color: #2a5a8a;
+  border-bottom: 1.5px solid #2a5a8a;
+  padding-bottom: 3px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+p {
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 14px 0;
+}
+
+ul {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+a {
+  color: #2a5a8a;
+  text-decoration: none;
+}
+
+/* Contact info line under name */
+h1 + p, h1 + p + p {
+  color: #555;
+  font-size: 9pt;
+}
