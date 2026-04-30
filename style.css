@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap');
+
+:root {
+  --ink: #1a1f2e;        /* deep charcoal-navy */
+  --ink-soft: #2d3a52;   /* slate */
+  --muted: #5d6b80;      /* cool gray */
+  --rule: #d3dae3;       /* light slate */
+  --accent: #1e4d4a;     /* deep teal */
+  --accent-soft: rgba(30, 77, 74, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans 3', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.55;
+  color: var(--ink);
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' 60;
+  font-size: 28pt;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+
+h1 + p {
+  color: var(--muted);
+  font-size: 9pt;
+  line-height: 1.6;
+  margin: 2px 0;
+}
+
+h1 + p + p {
+  color: var(--muted);
+  font-size: 9pt;
+  line-height: 1.6;
+  margin: 2px 0;
+}
+
+h1 + p strong {
+  display: block;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12pt;
+  color: var(--ink-soft);
+  margin: 2px 0 8px;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 22px 0 10px;
+  padding-top: 12px;
+  padding-bottom: 0;
+  border-top: 0.6pt solid var(--rule);
+  border-bottom: none;
+}
+
+h3 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' 24;
+  font-size: 12pt;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 14px 0 0;
+  letter-spacing: -0.005em;
+}
+
+h3 + p {
+  color: var(--muted);
+  font-size: 9pt;
+  margin: 1px 0 6px;
+  font-style: normal;
+}
+
+h3 + p strong {
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+p {
+  margin: 4px 0 6px;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+hr {
+  border: none;
+  border-top: 0.6pt solid var(--rule);
+  margin: 14px 0;
+}
+
+ul {
+  margin: 6px 0 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 4px;
+  padding-left: 14px;
+  position: relative;
+}
+
+li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 0.4pt solid rgba(30, 77, 74, 0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin: 6px 0 10px;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink);
+  padding: 5px 8px;
+  border-bottom: 0.6pt solid var(--rule);
+  background: #eef2f6;
+}
+
+td {
+  padding: 5px 8px;
+  border-bottom: 0.4pt solid var(--rule);
+  vertical-align: top;
+  color: var(--ink-soft);
+}
+
+tr:has(.m-expert),
+tr:has(.m-strong),
+tr:has(.m-direct),
+tr:has(.m-familiar) {
+  background: #e3efe6;
+}
+
+tr:has(.m-mixed),
+tr:has(.m-indirect) {
+  background: #fcf3d9;
+}
+
+tr:has(.m-limited),
+tr:has(.m-gap) {
+  background: #f5dcd9;
+}
+
+.m-expert,
+.m-strong,
+.m-direct,
+.m-familiar,
+.m-mixed,
+.m-indirect,
+.m-limited,
+.m-gap {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tag {
+  display: inline-block;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 7pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 1pt 6pt;
+  border-radius: 7pt;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-left: 4px;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+
+@media print {
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  h2 { page-break-after: avoid; }
+  h3 { page-break-after: avoid; }
+  table { page-break-inside: avoid; }
+}

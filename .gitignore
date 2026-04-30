@@ -1,0 +1,9 @@
+node_modules/
+test-results/
+playwright-report/
+.playwright/
+*.pdf
+*.log
+.superpowers/
+KNOWLEDGE-BASE/*.md
+!KNOWLEDGE-BASE/README.md
