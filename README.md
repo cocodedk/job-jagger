@@ -58,7 +58,7 @@ claude
 
 ## Full documentation
 
-See [job-jagger.github.io](https://cocodedk.github.io/job-jagger) for the full guide,
+See [job-jagger.github.io](https://job-jagger.cocode.dk) for the full guide,
 proof of results, privacy options, and service offering.
 
 ## License
